@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Потока — Веб-студия цифровых решений</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#080c14',
+                        cardBg: 'rgba(15, 23, 42, 0.6)',
+                        accentGreen: '#10b981',
+                        accentBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Cursor Spotlight */
+        #cursor-glow {
+            pointer-events: none;
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, rgba(59, 130, 246, 0.05) 40%, transparent 70%);
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s;
+            z-index: 9999;
+        }
+
+        /* Glassmorphism & Ambient Glow */
+        .glass-card {
+            background: rgba(13, 20, 36, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background: rgba(16, 185, 129, 0.15);
+            filter: blur(40px);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Running glowing border animation */
+        .glow-border {
+            position: relative;
+            border-radius: 1rem;
+        }
+
+        .glow-border::after {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: inherit;
+            background: linear-gradient(90deg, #10b981, #3b82f6, #10b981);
+            background-size: 200% 200%;
+            z-index: -1;
+            opacity: 0.6;
+            animation: borderGlow 6s linear infinite;
+        }
+
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Image hover zoom */
+        .img-zoom {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .group:hover .img-zoom {
+            transform: scale(1.06);
+        }
+
+        /* Button click active feedback */
+        .btn-click {
+            transition: transform 0.1s ease, background-color 0.2s ease, color 0.2s ease;
+        }
+        .btn-click:active {
+            transform: scale(0.96);
+            background-color: #059669 !important;
+            color: #ffffff !important;
+        }
+
+        /* Hide scrollbars for clean UI */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080c14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(16, 185, 129, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-dark text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Custom Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-dark/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                    4P
+                </div>
+                <span class="font-bold text-xl tracking-tight text-white">4 Потока</span>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-emerald-400 transition-colors">О студии</a>
+                <a href="#process" class="hover:text-emerald-400 transition-colors">Процесс</a>
+                <a href="#services" class="hover:text-emerald-400 transition-colors">Услуги</a>
+                <a href="#cases" class="hover:text-emerald-400 transition-colors">Кейсы</a>
+                <a href="#prices" class="hover:text-emerald-400 transition-colors">Цены</a>
+                <a href="#reviews" class="hover:text-emerald-400 transition-colors">Отзывы</a>
+                <a href="#faq" class="hover:text-emerald-400 transition-colors">Вопросы</a>
+                <a href="#contacts" class="hover:text-emerald-400 transition-colors">Контакты</a>
+            </nav>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#contact-form" class="btn-click px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-semibold text-sm shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:from-emerald-400 hover:to-emerald-500 transition-all">
+                    Обсудить проект
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="2
