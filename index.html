@@ -157,4 +157,724 @@
             <!-- Mobile menu button -->
             <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="2
+                    <path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark/95 border-b border-white/10 px-6 py-4 space-y-3 backdrop-blur-xl">
+            <a href="#about" class="block text-slate-300 hover:text-emerald-400 py-1">О студии</a>
+            <a href="#process" class="block text-slate-300 hover:text-emerald-400 py-1">Процесс</a>
+            <a href="#services" class="block text-slate-300 hover:text-emerald-400 py-1">Услуги</a>
+            <a href="#cases" class="block text-slate-300 hover:text-emerald-400 py-1">Кейсы</a>
+            <a href="#prices" class="block text-slate-300 hover:text-emerald-400 py-1">Цены</a>
+            <a href="#reviews" class="block text-slate-300 hover:text-emerald-400 py-1">Отзывы</a>
+            <a href="#faq" class="block text-slate-300 hover:text-emerald-400 py-1">Вопросы</a>
+            <a href="#contacts" class="block text-slate-300 hover:text-emerald-400 py-1">Контакты</a>
+            <div class="pt-2">
+                <a href="#contact-form" class="btn-click block w-full py-2.5 text-center rounded-xl bg-emerald-500 text-white font-semibold text-sm">Обсудить проект</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 lg:pt-44 lg:pb-32 overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Веб-студия цифровых решений
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Создаем цифровые инструменты, которые <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-500">продают</span>
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-2xl leading-relaxed">
+                        Разрабатываем современные сайты и digital-решения для бизнеса. Превращаем сложные идеи в понятные интерфейсы, укрепляем доверие и приводим клиентов.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#contact-form" class="btn-click inline-flex items-center justify-center px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:from-emerald-400 hover:to-emerald-500 transition-all text-center">
+                            Обсудить проект
+                        </a>
+                        <a href="#cases" class="btn-click inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-800/80 hover:bg-slate-800 text-slate-200 font-semibold border border-white/10 transition-all text-center">
+                            Смотреть кейсы
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10">
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">100+</div>
+                            <div class="text-xs text-slate-400 mt-1">Успешных проектов</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">от 3 дней</div>
+                            <div class="text-xs text-slate-400 mt-1">Сроки реализации</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-emerald-400">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Адаптив и SEO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="glass-card glow-border p-3 rounded-2xl overflow-hidden group">
+                        <div class="relative rounded-xl overflow-hidden aspect-[4/3]">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Digital Dashboard UI" class="img-zoom w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-dark/60 backdrop-blur-md border border-white/10">
+                                <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">UI/UX & Разработка</div>
+                                <div class="text-sm font-bold text-white mt-0.5">Чистый код, высокая конверсия, точный фокус на задачах бизнеса</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">О студии</div>
+                    <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-white">
+                        Понятные инструменты для реального роста бизнеса
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Мы не создаем дизайн ради наград на фестивалях. Наша цель — разработать сайт, который станет надежным менеджером по продажам, работающим 24/7.
+                    </p>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Погружение в специфику вашей ниши и бизнес-процессы</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Продуманная структура текстов и логики интерфейса</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-emerald-400 mt-1 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Полный цикл: от идеи и аналитики до техподдержки</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-4 font-bold text-xl">01</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Стратегия и UX</h3>
+                        <p class="text-sm text-slate-400">Проектируем логику путей пользователя на основе исследования поведения клиентов.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-4 font-bold text-xl">02</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Дизайн уровня UI/UX</h3>
+                        <p class="text-sm text-slate-400">Создаем эстетичный современный облик, отражающий высокий статус вашей компании.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-4 font-bold text-xl">03</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Надежная разработка</h3>
+                        <p class="text-sm text-slate-400">Пишем чистый, быстрый код без лишних плагинов, обеспечивая безупречную адаптивность.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl group">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 mb-4 font-bold text-xl">04</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Запуск и поддержка</h3>
+                        <p class="text-sm text-slate-400">Настраиваем аналитику, базовое SEO и сопровождаем проект после релиза.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 relative border-t border-white/5 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Как мы работаем</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Четыре потока создания результата</h2>
+                <p class="text-slate-400">Прозрачный и выстроенный процесс разработки от первого созвона до готового к работе сайта.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="glass-card p-6 rounded-2xl group relative">
+                    <div class="text-emerald-400 font-extrabold text-3xl mb-4">01</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Аналитика и стратегия</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Изучаем вашу аудиторию, конкурентов и формируем сильное позиционирование бренда.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl group relative">
+                    <div class="text-emerald-400 font-extrabold text-3xl mb-4">02</div>
+                    <h3 class="text-lg font-bold text-white mb-2">UX/UI Дизайн</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Проектируем удобный интерфейс, продумываем каждый экран и сценарий взаимодействия.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl group relative">
+                    <div class="text-emerald-400 font-extrabold text-3xl mb-4">03</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Разработка и адаптив</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Чистый код и высокая скорость загрузки на любых устройствах и экранах.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl group relative">
+                    <div class="text-emerald-400 font-extrabold text-3xl mb-4">04</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Запуск и аналитика</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Подключаем домен, настраиваем SEO, счетчики аналитики и передаем готовый проект.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Услуги</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Что мы создаем для вашего бизнеса</h2>
+                <p class="text-slate-400">Комплексные цифровые решения с акцентом на конверсию, удобство и фирменный стиль.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card glow-border p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="1.8" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Лендинг / Презентация</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Идеально для запуска нового продукта, услуги или теста ниши. Фокус на убеждении клиента сделать целевое действие.</p>
+                        <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/5">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Срок: 3–5 дней</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Индивидуальный дизайн</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Адаптивная верстка</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-emerald-400">от 300 BYN</span>
+                        <a href="#contact-form" class="btn-click text-xs font-bold text-white bg-slate-800 hover:bg-emerald-600 px-4 py-2 rounded-lg transition-colors">Заказать</a>
+                    </div>
+                </div>
+
+                <div class="glass-card glow-border p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="1.8" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Многостраничный сайт / Каталог</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Для компаний с большим ассортиментом или разветвленной структурой услуг. Удобная навигация и глубокая презентация бренда.</p>
+                        <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/5">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Срок: 14–21 день</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Удобная структура каталога</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span> Базовая SEO оптимизация</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-blue-400">от 1800 BYN</span>
+                        <a href="#contact-form" class="btn-click text-xs font-bold text-white bg-slate-800 hover:bg-emerald-600 px-4 py-2 rounded-lg transition-colors">Заказать</a>
+                    </div>
+                </div>
+
+                <div class="glass-card glow-border p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="1.8" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Кастомное решение по ТЗ</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">Уникальные веб-сервисы, личные кабинеты, интерактивные калькуляторы и нестандартные интеграции под ваши бизнес-процессы.</p>
+                        <ul class="space-y-2 text-xs text-slate-400 pt-2 border-t border-white/5">
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Индивидуальные сроки</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Сложная логика и интеграции</li>
+                            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span> Полная масштабируемость</li>
+                        </ul>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-white/10 flex items-center justify-between">
+                        <span class="text-sm font-semibold text-purple-400">от 3000 BYN</span>
+                        <a href="#contact-form" class="btn-click text-xs font-bold text-white bg-slate-800 hover:bg-emerald-600 px-4 py-2 rounded-lg transition-colors">Обсудить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases / Portfolio Section -->
+    <section id="cases" class="py-24 relative border-t border-white/5 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Портфолио</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Реализованные проекты</h2>
+                <p class="text-slate-400">Каждый проект решает конкретные бизнес-задачи клиентов в разных сферах.</p>
+            </div>
+
+            <!-- Case Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case 1: Dental Clinic -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Стоматологическая клиника" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-emerald-400 border border-white/10">Стоматология</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Современная стоматологическая клиника</h3>
+                            <p class="text-sm text-slate-400 mt-1">Редизайн сайта, запись на прием в 2 клика, демонстрация услуг и врачей.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>UI/UX & Разработка</span>
+                            <span class="text-emerald-400 font-medium">Конверсия +42%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: Medical Center -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80" alt="Медицинский центр" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-blue-400 border border-white/10">Медицинский центр</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Многопрофильный медцентр</h3>
+                            <p class="text-sm text-slate-400 mt-1">Многостраничный сайт с каталогом анализов, врачей и онлайн-регистратурой.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>Стратегия & Каталог</span>
+                            <span class="text-emerald-400 font-medium">Заявки х2.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3: Coffee Shop -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Кофейня" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-amber-400 border border-white/10">Кофейня</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Сеть атмосферных кофеен</h3>
+                            <p class="text-sm text-slate-400 mt-1">Имиджевый лендинг с меню, картой заведений и атмосферой бренда.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>Дизайн & Мобильный адаптив</span>
+                            <span class="text-emerald-400 font-medium">Премиум-опыт</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4: Restaurant -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Ресторан" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-rose-400 border border-white/10">Ресторан</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Ресторан авторской кухни</h3>
+                            <p class="text-sm text-slate-400 mt-1">Интерактивное меню, бронирование столиков и презентация банкетного зала.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>UI/UX & Бронирование</span>
+                            <span class="text-emerald-400 font-medium">Брони +50%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5: Design Studio -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Дизайн-студия" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-purple-400 border border-white/10">Дизайн-студия</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Студия интерьерного дизайна</h3>
+                            <p class="text-sm text-slate-400 mt-1">Портфолио проектов, калькулятор стоимости ремонта и галерея в высоком разрешении.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>Кастомный дизайн</span>
+                            <span class="text-emerald-400 font-medium">Премиум сегмент</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 6: Flower Shop -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80" alt="Цветочный магазин" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-pink-400 border border-white/10">Цветочный магазин</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Бутик авторских букетов</h3>
+                            <p class="text-sm text-slate-400 mt-1">Каталог цветов, быстрый заказ в мессенджерах и система корпоративных подарков.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>Интернет-каталог</span>
+                            <span class="text-emerald-400 font-medium">Продажи х3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 7: Construction Company -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Строительство домов" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-orange-400 border border-white/10">Строительство домов</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Компания по строительству загородных домов</h3>
+                            <p class="text-sm text-slate-400 mt-1">Презентация проектов коттеджей, калькулятор сметы и блок сданных объектов.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>Многостраничный сайт</span>
+                            <span class="text-emerald-400 font-medium">Лиды высокого качества</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 8: Surveillance Systems -->
+                <div class="glass-card rounded-2xl overflow-hidden group flex flex-col justify-between">
+                    <div class="relative overflow-hidden aspect-[16/10]">
+                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="Системы видеонаблюдения" class="img-zoom w-full h-full object-cover">
+                        <div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-dark/70 backdrop-blur-md text-xs font-semibold text-cyan-400 border border-white/10">Системы безопасности</div>
+                    </div>
+                    <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Компания по установке видеосистем</h3>
+                            <p class="text-sm text-slate-400 mt-1">Техническое описание решений для бизнеса и дома, калькулятор комплектов оборудования.</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-white/5 text-xs text-slate-500">
+                            <span>B2B Лендинг</span>
+                            <span class="text-emerald-400 font-medium">B2B Заявки</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Cases CTA -->
+            <div class="mt-12 text-center">
+                <a href="#contact-form" class="btn-click inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold border border-white/10 transition-all">
+                    <span>Больше кейсов</span>
+                    <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section id="prices" class="py-24 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Инвестиции</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Пакеты и цены</h2>
+                <p class="text-slate-400">Прозрачная стоимость разработки в белорусских рублях. Никаких скрытых платежей.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Price 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm font-semibold text-emerald-400 uppercase tracking-wider">Старт</div>
+                            <h3 class="text-2xl font-bold text-white mt-1">Лендинг / Презентация</h3>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl lg:text-4xl font-extrabold text-white">от 300</span>
+                            <span class="text-slate-400 font-medium">BYN</span>
+                        </div>
+                        <div class="text-sm text-slate-300">Сроки: 3–5 дней</div>
+                        <ul class="space-y-3 text-sm text-slate-300 pt-4 border-t border-white/5">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Индивидуальный дизайн</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Адаптивная верстка</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Форма заявки и мессенджеры</li>
+                        </ul>
+                    </div>
+                    <div class="pt-8 mt-8 border-t border-white/10">
+                        <a href="#contact-form" class="btn-click block w-full py-3 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white font-bold text-center text-sm transition-colors">Выбрать пакет</a>
+                    </div>
+                </div>
+
+                <!-- Price 2 -->
+                <div class="glass-card glow-border p-8 rounded-2xl flex flex-col justify-between group relative">
+                    <div class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-emerald-500 text-white text-xs font-bold uppercase tracking-wider shadow-lg">Популярно</div>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm font-semibold text-blue-400 uppercase tracking-wider">Бизнес</div>
+                            <h3 class="text-2xl font-bold text-white mt-1">Многостраничный сайт / Каталог</h3>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl lg:text-4xl font-extrabold text-white">от 1800</span>
+                            <span class="text-slate-400 font-medium">BYN</span>
+                        </div>
+                        <div class="text-sm text-slate-300">Сроки: 14–21 день</div>
+                        <ul class="space-y-3 text-sm text-slate-300 pt-4 border-t border-white/5">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Всё из пакета «Лендинг»</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Структура от 3 до 10 страниц</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Базовая SEO оптимизация</li>
+                        </ul>
+                    </div>
+                    <div class="pt-8 mt-8 border-t border-white/10">
+                        <a href="#contact-form" class="btn-click block w-full py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold text-center text-sm shadow-lg shadow-emerald-500/20 transition-all">Выбрать пакет</a>
+                    </div>
+                </div>
+
+                <!-- Price 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between group">
+                    <div class="space-y-6">
+                        <div>
+                            <div class="text-sm font-semibold text-purple-400 uppercase tracking-wider">Индивидуально</div>
+                            <h3 class="text-2xl font-bold text-white mt-1">Кастомное решение по ТЗ</h3>
+                        </div>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-3xl lg:text-4xl font-extrabold text-white">от 3000</span>
+                            <span class="text-slate-400 font-medium">BYN</span>
+                        </div>
+                        <div class="text-sm text-slate-300">Индивидуальные сроки</div>
+                        <ul class="space-y-3 text-sm text-slate-300 pt-4 border-t border-white/5">
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-purple-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Сложные веб-приложения</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-purple-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Интеграции с CRM и API</li>
+                            <li class="flex items-center gap-2"><svg class="w-4 h-4 text-purple-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Выделенная команда</li>
+                        </ul>
+                    </div>
+                    <div class="pt-8 mt-8 border-t border-white/10">
+                        <a href="#contact-form" class="btn-click block w-full py-3 rounded-xl bg-slate-800 hover:bg-emerald-600 text-white font-bold text-center text-sm transition-colors">Обсудить задачу</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-24 relative border-t border-white/5 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Отзывы</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Что говорят наши клиенты</h2>
+                <p class="text-slate-400">Реальные отзывы предпринимателей, чей бизнес получил новый импульс с нашими сайтами.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        «Работа со студией «4 Потока» превзошла ожидания. Сайт сделали быстрее оговоренного срока, дизайн выглядит очень дорого и современно. Количество обращений выросло в полтора раза в первый же месяц после запуска.»
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center">ДМ</div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Дмитрий Михайлов</div>
+                            <div class="text-xs text-slate-400">Директор медицинского центра</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        «Понравился структурированный подход. Ребята не просто верстают, а вникают в цифры и боли клиентов. Наш сайт стоматологии теперь выглядит на уровень выше главных конкурентов в городе.»
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center">АС</div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Анна Соколова</div>
+                            <div class="text-xs text-slate-400">Основатель стоматологии</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                        «Заказывали многостраничный каталог. Всё четко, прозрачно по этапам и оплате. Код чистый, скорость загрузки моментальная. Рекомендую как надежных digital-партнеров.»
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-white/5">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center">ПК</div>
+                        <div>
+                            <div class="text-sm font-bold text-white"> Павел Ковалёв</div>
+                            <div class="text-xs text-slate-400">Руководитель строительной компании</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide uppercase">FAQ</div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white">Часто задаваемые вопросы</h2>
+                <p class="text-slate-400">Ответы на популярные вопросы о процессе работы, сроках и оплате.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="glass-card rounded-xl overflow-hidden transition-all">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-white flex justify-between items-center focus:outline-none">
+                        <span>Как происходит оплата за разработку?</span>
+                        <svg class="w-5 h-5 text-emerald-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+                        Оплата разбивается на этапы: предоплата 50% перед началом работы над проектом и 50% после завершения разработки, тестирования и переноса сайта на ваш хостинг и домен.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden transition-all">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-white flex justify-between items-center focus:outline-none">
+                        <span>Нужно ли мне готовить тексты и структуру заранее?</span>
+                        <svg class="w-5 h-5 text-emerald-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+                        Не обязательно. Мы помогаем составить продающие тексты, структуру блоков и логику подачи информации на основе интервью с вами и анализа ваших конкурентов.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden transition-all">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-white flex justify-between items-center focus:outline-none">
+                        <span>Смогу ли я сам редактировать тексты и товары на сайте?</span>
+                        <svg class="w-5 h-5 text-emerald-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+                        Да, мы настраиваем интуитивно понятную панель управления или административную часть, а также записываем простую видеоинструкцию по управлению сайтом.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-xl overflow-hidden transition-all">
+                    <button class="faq-toggle w-full px-6 py-4 text-left font-bold text-white flex justify-between items-center focus:outline-none">
+                        <span>Что входит в базовое SEO после запуска?</span>
+                        <svg class="w-5 h-5 text-emerald-400 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
+                        Мы прописываем мета-теги (Title, Description), настраиваем микроразметку Schema.org, создаем sitemap.xml, robots.txt и подключаем сайт к поисковым панелям Яндекс и Google.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts & CTA Section -->
+    <section id="contact-form" class="py-24 relative border-t border-white/5 bg-slate-950/60 overflow-hidden">
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block px-3.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold tracking-wide uppercase">Контакты</div>
+                        <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-white">Давайте обсудим ваш проект</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Оставьте заявку или свяжитесь с нами напрямую. Мы проконсультируем вас по задачам, срокам и стоимости.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 font-bold">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Телефон / Telegram / WhatsApp</div>
+                                <a href="tel:+375336106761" class="text-lg font-bold text-white hover:text-emerald-400 transition-colors">+375 33 610 67 61</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 font-bold">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Электронная почта</div>
+                                <a href="mailto:info@4potoka.by" class="text-lg font-bold text-white hover:text-emerald-400 transition-colors">info@4potoka.by</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 font-bold">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="2" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Время работы</div>
+                                <div class="text-base font-bold text-white">Пн–Пт: 09:00 – 18:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-card glow-border p-8 lg:p-10 rounded-2xl">
+                        <form id="lead-form" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Ваше имя</label>
+                                    <input type="text" required placeholder="Иван" class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Телефон или Telegram</label>
+                                    <input type="text" required placeholder="+375 (33) 000-00-00" class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Расскажите о проекте</label>
+                                <textarea rows="4" placeholder="Какой у вас бизнес и какую задачу нужно решить..." class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="btn-click w-full py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-white font-bold text-center shadow-lg shadow-emerald-500/25 transition-all">
+                                Отправить заявку
+                            </button>
+                            <div id="form-success" class="hidden text-center text-emerald-400 font-semibold text-sm pt-2">
+                                Спасибо! Ваша заявка успешно отправлена. Мы свяжемся с вами в ближайшее время.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacts" class="py-12 border-t border-white/5 bg-dark">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center font-bold text-sm text-white">
+                    4P
+                </div>
+                <span class="font-bold text-lg text-white">4 Потока</span>
+            </div>
+            <div class="text-xs text-slate-500 text-center">
+                © 2026 Веб-студия «4 Потока». Все права защищены.
+            </div>
+            <div class="flex items-center gap-6 text-sm text-slate-400">
+                <a href="mailto:info@4potoka.by" class="hover:text-emerald-400 transition-colors">info@4potoka.by</a>
+                <a href="tel:+375336106761" class="hover:text-emerald-400 transition-colors">+375 33 610 67 61</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Custom Cursor Spotlight Follower
+        const cursorGlow = document.getElementById('cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('svg');
+                
+                // Toggle current
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Form Submission simulator
+        const leadForm = document.getElementById('lead-form');
+        const formSuccess = document.getElementById('form-success');
+        leadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            leadForm.querySelector('button[type="submit"]').style.display = 'none';
+            formSuccess.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
